@@ -28,7 +28,7 @@ const SignUp = () => {
         <div className="w-full bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100 border border-gray-100">
           <h1 className="justify-center text-center pt-2 font-semibold text-3xl text-black mb-8">
             SignUp to
-            <span className="text-blue-400"> ChatApp</span>
+            <span className="text-blue-400"> Streamly</span>
           </h1>
           <form onSubmit={handleSubmit} className="ml-4">
             <label className="text-black pl-3">Fullname</label>

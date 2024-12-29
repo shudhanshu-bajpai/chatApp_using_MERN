@@ -14,11 +14,11 @@ const Login = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mx-auto min-w-96">
+    <div className="flex flex-col items-center justify-center mx-auto min-w-96 ">
       <div className="h-50 w-full bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-100 border border-gray-100">
         <h1 className="justify-center text-center pt-2 font-semibold text-3xl text-black mb-8">
           Login to
-          <span className="text-blue-400"> ChatApp</span>
+          <span className="text-blue-400"> Streamly</span>
         </h1>
         <form onSubmit={handleSubmit}>
           <label className="text-black pl-3 ml-4">Username</label>

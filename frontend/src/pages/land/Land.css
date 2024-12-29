@@ -1,0 +1,16 @@
+@keyframes colorChange {
+    0% {
+      color: rgb(81, 209, 255);
+    }
+    50% {
+      color: rgb(23, 232, 255);
+    }
+    100% {
+      color: rgb(245, 245, 245);
+    }
+  }
+  
+  .text-gradient {
+    animation: colorChange 3s infinite; /* 3s duration, infinite loop */
+  }
+  
