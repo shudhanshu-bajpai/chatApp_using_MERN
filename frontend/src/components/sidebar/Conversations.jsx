@@ -1,22 +1,21 @@
+import React from 'react'
 import useGetConversations from "../../hooks/useGetConversations"
-import Conversation from "./conversation"
-const Conversations = () => {
+import Conversation from "./Conversation"
 
-  const {loading, conversations} = useGetConversations();
+const Conversations = ({ onUserClick }) => {
+  const { loading, conversations } = useGetConversations()
 
   return (
-    <div className="py-2 flex flex-col overflow-auto">
-      
-    
-    {conversations.map((conversation, idx) => (
-      <Conversation
-         key={conversation._id}
-         conversation={conversation}
-         lastIdx={idx == conversations.length-1}
-        />
-    ))}
-
-    {loading ? <span className="loading loading-spinner mx-auto"></span> : null}
+    <div className=" flex-col flex-1 overflow-auto">
+      {conversations.map((conversation, idx) => (
+        <div key={conversation._id} onClick={onUserClick}>
+          <Conversation
+            conversation={conversation}
+            lastIdx={idx === conversations.length - 1}
+          />
+        </div>
+      ))}
+      {loading ? <span className="loading loading-spinner mx-auto"></span> : null}
     </div>
   )
 }

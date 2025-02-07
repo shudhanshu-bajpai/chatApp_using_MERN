@@ -13,14 +13,13 @@ const MessageInput = () => {
     await sendMessage(message);
     setMessage(""); 
   }
-
   return (
-    <form className="px-4 my-3" onSubmit={handleSubmit}>
+    <form className="px-4 pb-2 pt-5" onSubmit={handleSubmit}>
       <div className="w-full relative">
         <input
           type="text"
-          className="border text-sm rounded-full w-full bg-white p-2.5 border-blue-400 text-black"
-          placeholder="Send a message"
+          className="placeholder-gray-500 border text-sm rounded-md w-full bg-white p-2.5 border-blue-400 text-black"
+          placeholder="Write a message ..."
           value = {message}
           onChange={(e) => setMessage(e.target.value)}
         />

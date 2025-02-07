@@ -51,7 +51,7 @@ function Land() {
   return (
     <div className="">
       {/* Hero Section */}
-      <header className="container mx-auto px-4 py-16 md:py-24 text-center text-white bg-black">
+      <header className="container px-4 py-16 md:py-24 text-center text-white bg-black ">
         <div className="flex items-center justify-center mb-6">
           <MessageCircle className="h-12 md:h-14 w-12 md:w-14 text-white mr-2" />
           <h1 className="text-5xl md:text-7xl font-bold text-sky-500">
