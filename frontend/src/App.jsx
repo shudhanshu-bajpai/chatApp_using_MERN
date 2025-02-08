@@ -1,6 +1,6 @@
 import {Navigate, Route, Routes} from 'react-router-dom'
 import './App.css'
-import Login from './pages/login/login'
+import Login from './pages/login/Login'
 import SignUp from './pages/signup/SignUp'
 import Home from './pages/home/Home'
 import Land from './pages/land/Land'
