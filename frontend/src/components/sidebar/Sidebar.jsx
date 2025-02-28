@@ -4,7 +4,7 @@ import LogoutButton from './LogoutButton'
 
 const Sidebar = ({ onUserClick }) => {
   return (
-    <div className='flex flex-col min-w-20'>
+    <div className='flex flex-col min-w-20 ml-8 '>
       <SearchInput/>
       <div className="divider px-3 bg-gray-400 rounded h-1"></div>
       <Conversations onUserClick={onUserClick} />
