@@ -17,9 +17,9 @@ const __dirname = path.resolve();
 
 dotenv.config();
 
-// app.use(cors({
-// 	origin: 'http://localhost:5173', // Replace with your frontend URL
-//   }));
+app.use(cors({
+	origin: 'https://chatapp-3i01.onrender.com', // Replace with your frontend URL
+  }));
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
 
